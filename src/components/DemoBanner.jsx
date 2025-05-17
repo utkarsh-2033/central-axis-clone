@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import bg from './assets/bg-demo.png';
+import bg from '../assets/bg-demo.png';
 
 export default function DemoBanner() {
   return (

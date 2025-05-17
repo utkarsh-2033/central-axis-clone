@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from './assets/logo.jpeg'; // Placeholder logo
+import logo from '../assets/logo.jpeg'; // Placeholder logo
 
 const navDropdowns = [
   {

@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import video2 from './assets/networking-b.mp4';
-import video1 from './assets/hb-monitoring.mp4';
-import video3 from './assets/asset-management-b.mp4';
-import video4 from './assets/SinglePane-b.mp4';
-import video5 from './assets/compliance.mp4';
-import video6 from './assets/dc-planning.mp4';
+import video2 from '../assets/networking-b.mp4';
+import video1 from '../assets/hb-monitoring.mp4';
+import video3 from '../assets/asset-management-b.mp4';
+import video4 from '../assets/SinglePane-b.mp4';
+import video5 from '../assets/compliance.mp4';
+import video6 from '../assets/dc-planning.mp4';
 
 const features = [
   {

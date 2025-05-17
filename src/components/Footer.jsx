@@ -1,4 +1,4 @@
-import logo from './assets/logo.jpeg';
+import logo from '../assets/logo.jpeg';
 export default function Footer() {
   return (
     <footer className="w-full bg-black border-t border-[#232136] py-8 flex flex-col items-start justify-center text-center pl-20 pr-4">
