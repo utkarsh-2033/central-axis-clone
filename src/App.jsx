@@ -8,7 +8,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <div className="bg-[#18181b] text-white min-h-screen w-full font-sans scroll-smooth">
+    <div className="bg-black text-white min-h-screen w-full font-sans scroll-smooth">
       <Navbar />
       <HeroSection />
       <PartnersBar />
