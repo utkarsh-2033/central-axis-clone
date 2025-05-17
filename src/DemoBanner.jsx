@@ -3,7 +3,8 @@ import bg from './assets/bg-demo.png';
 
 export default function DemoBanner() {
   return (
-    <section className="w-full flex justify-center items-center relative bg-[#232136] px-4">
+    <section className="w-full flex justify-center items-center relative bg-black px-4">
+      <div className="w-full max-w-7xl mx-auto  relative">
       <div className="absolute inset-0 bg-cover bg-center blur-xs pointer-events-none" style={{ backgroundImage: `url(${bg})`  }} />
       <div className="relative py-12 z-10 flex flex-col items-center w-full h-full rounded-xl shadow-xl bg-black/30">
         <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white text-center">Book a Demo</h2>
@@ -15,6 +16,7 @@ export default function DemoBanner() {
         >
           Schedule Now
         </motion.button>
+      </div>
       </div>
     </section>
   );

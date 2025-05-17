@@ -84,7 +84,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.18 }}
-                  className="absolute left-1/2 -translate-x-1/2 mt-2 w-72 bg-[#18181b] border border-[#33334a] rounded-xl shadow-xl py-2 z-50"
+                  className="absolute  left-1/2 -translate-x-1/2 mt-2 w-72 bg-[#18181b] border border-amber-50 rounded-xl shadow-xl py-2 z-50"
                 >
                   {nav.items.map((item, j) => (
                     <div
