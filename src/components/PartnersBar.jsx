@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import dell from './assets/dell.png';
-import hp from './assets/hp.png';
-import intel from './assets/intel.png';
-import lenovo from './assets/lenovo.png';
-import amd from './assets/amd.png';
-import nvidia from './assets/nvidia.png';
-import cisco from './assets/cisco.png';
-import hpe from './assets/hp.png';
+import dell from '../assets/dell.png';
+import hp from '../assets/hp.png';
+import intel from '../assets/intel.png';
+import lenovo from '../assets/lenovo.png';
+import amd from '../assets/amd.png';
+import nvidia from '../assets/nvidia.png';
+import cisco from '../assets/cisco.png';
+import hpe from '../assets/hp.png';
 // import schneider from './assets/schneider.png';
 // import supermicro from './assets/supermicro.png';
 

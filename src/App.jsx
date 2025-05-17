@@ -1,11 +1,11 @@
-import Navbar from './Navbar';
-import HeroSection from './HeroSection';
-import PartnersBar from './PartnersBar';
-import FeaturesSection from './FeaturesSection';
-import DynamicResourceManagement from './DynamicResourceManagement';
-import DemoBanner from './DemoBanner';
-import FAQSection from './FAQSection';
-import Footer from './Footer';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import PartnersBar from './components/PartnersBar';
+import FeaturesSection from './components/FeaturesSection';
+import DynamicResourceManagement from './components/DynamicResourceManagement';
+import DemoBanner from './components/DemoBanner';
+import FAQSection from './components/FAQSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
