@@ -23,16 +23,21 @@ export const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="w-full bg-[#18181b] py-16 flex flex-col items-center px-4">
-      <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white text-center">Frequently asked questions</h2>
-      <div className="w-16 h-1 bg-gradient-to-r from-purple-400 to-purple-700 rounded-full mb-8" />
-      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
-        {faqs.map((faq, i) => (
-          <div key={i} className="mb-4 rounded-lg bg-[#232136] p-6 hover:shadow-lg transition">
-            <div className="font-semibold text-white mb-1">{faq.q}</div>
-            <div className="text-gray-400 text-base">{faq.a}</div>
-          </div>
-        ))}
+    <section className="w-full bg-black py-20 flex flex-col items-center">
+      <div className="w-full max-w-7xl mx-auto px-4">
+        <div className="mb-3 flex justify-center">
+          <span className="px-4 py-1 rounded-full bg-[#232228] text-gray-400 text-xs font-semibold">FAQs</span>
+        </div>
+        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white text-center">Frequently asked questions</h2>
+        <div className="text-gray-400 text-base mb-12 text-center max-w-2xl mx-auto">Find answers to common questions about our solutions.</div>
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+          {faqs.map((faq, i) => (
+            <div key={i} className="">
+              <div className="font-semibold text-white text-base mb-2 leading-snug">{faq.q}</div>
+              <div className="text-gray-400 text-sm leading-relaxed">{faq.a}</div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
