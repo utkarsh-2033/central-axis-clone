@@ -1,4 +1,10 @@
 import { motion } from 'framer-motion';
+import video2 from './assets/networking-b.mp4';
+import video1 from './assets/hb-monitoring.mp4';
+import video3 from './assets/asset-management-b.mp4';
+import video4 from './assets/SinglePane-b.mp4';
+import video5 from './assets/compliance.mp4';
+import video6 from './assets/dc-planning.mp4';
 
 const features = [
   {
@@ -9,6 +15,7 @@ const features = [
       'Automated alerts and intelligent incident response',
       'Comprehensive reporting and trend analysis',
     ],
+    video: video1,
   },
   {
     title: 'Network Management and Monitoring',
@@ -18,6 +25,7 @@ const features = [
       'Automated network security and threat detection',
       'Advanced network diagnostics and troubleshooting tools',
     ],
+    video: video2,
   },
   {
     title: 'Asset Management',
@@ -27,6 +35,7 @@ const features = [
       'Intelligent ticketing based on asset health and performance',
       'Efficient resource allocation and optimization',
     ],
+    video: video3,
   },
   {
     title: 'A Single Pane of Glass',
@@ -36,6 +45,7 @@ const features = [
       'Customizable interface tailored to your specific operational requirements and priorities.',
       'Unified dashboard integrating all BMS and EPMS systems for seamless monitoring and management.',
     ],
+    video: video4,
   },
   {
     title: 'Built-In Compliance',
@@ -44,6 +54,7 @@ const features = [
       'Track data for EU, US, and global regulatory standards.',
       'We guarantee compliance and handle every step between monitoring and reporting.',
     ],
+    video: video5,
   },
   {
     title: 'Data Center Planning',
@@ -53,14 +64,9 @@ const features = [
       'Design unique specifications for your data center.',
       'Continuous monitoring lowers costs while increasing reliability.',
     ],
+    video: video6,
   },
 ];
-
-const placeholderImg = (
-  <div className="w-full m-2.5 h-40 md:h-88 bg-black rounded-lg flex items-center justify-center text-gray-500 text-xs border border-[#232136]">
-    Screenshot
-  </div>
-);
 
 export default function FeaturesSection() {
   return (
@@ -73,11 +79,19 @@ export default function FeaturesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
-            className="flex flex-col md:flex-row md:items-center bg-[#18181B] rounded-lg border border-[#3f3e48] shadow-lg overflow-hidden p-0 md:p-2"
+            className="flex flex-col md:flex-row md:items-center bg-[#232228] rounded-2xl border border-[#232136] shadow-lg overflow-hidden p-0 md:p-2"
           >
-            {/* On mobile, image first; on desktop, image left/right alternates */}
+            {/* On mobile, video first; on desktop, video left/right alternates */}
             <div className={`w-full md:w-1/2 flex items-center justify-center ${i % 2 === 1 ? 'md:order-2' : ''}`}>
-              {placeholderImg}
+              <video
+                src={feature.video}
+                className="w-full h-40 md:h-76 rounded-lg object-cover border border-[#232136] bg-black"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls={false}
+              />
             </div>
             <div className={`w-full md:w-1/2 flex flex-col justify-center py-8 px-4 md:p-8 ${i % 2 === 1 ? 'md:order-1' : ''}`}>
               <h2 className="text-xl md:text-3xl font-bold mb-2 text-white leading-snug">{feature.title}</h2>

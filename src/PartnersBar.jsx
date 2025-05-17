@@ -24,18 +24,18 @@ const logos = [
 export default function PartnersBar() {
   return (
     <section className="w-full bg-black py-12 flex flex-col items-center">
-      <div className="w-full max-w-7xl mx-auto px-4">
+      <div className="w-full max-w-8xl mx-auto px-4">
         <div className="text-gray-400 text-center mb-10 text-lg md:text-xl font-normal">
           Seamless integrations with any data center hardware
         </div>
-        <div className="relative w-full overflow-x-hidden">
+        <div className="relative w-full overflow-hidden">
         <motion.div
           className="flex gap-x-12 items-center"
           animate={{ x: ['0%', '-50%'] }}
           transition={{
             repeat: Infinity,
             repeatType: 'loop',
-            duration: 18,
+            duration: 28,
             ease: 'linear',
           }}
           style={{ width: 'max-content' }}
