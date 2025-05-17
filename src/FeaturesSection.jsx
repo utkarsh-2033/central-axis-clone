@@ -58,8 +58,8 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="w-full bg-[#18181b] py-12 flex flex-col items-center">
-      <div className="w-full max-w-6xl flex flex-col gap-10">
+    <section className="w-full bg-[#18181b] py-12 flex flex-col items-center px-4">
+      <div className="w-full max-w-6xl flex flex-col gap-6 md:gap-10">
         {features.map((feature, i) => (
           <motion.div
             key={feature.title}
@@ -69,7 +69,7 @@ export default function FeaturesSection() {
             transition={{ duration: 0.6, delay: i * 0.1 }}
             className={`flex flex-col md:flex-row md:items-center bg-[#232136] rounded-xl shadow-lg overflow-hidden`}
           >
-            <div className="flex-1 p-8">
+            <div className={`flex-1 p-8 ${i % 2 === 1 ? 'order-2 md:order-1' : ''}`}>
               <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">{feature.title}</h2>
               <p className="text-gray-400 mb-4">{feature.desc}</p>
               <ul className="list-none space-y-2">
@@ -81,9 +81,9 @@ export default function FeaturesSection() {
                 ))}
               </ul>
             </div>
-            <div className="flex-1 min-h-[220px] flex items-center justify-center bg-[#18181b]">
+            <div className={`flex-1 min-h-[220px] flex items-center justify-center bg-[#18181b] ${i % 2 === 1 ? 'order-1 md:order-2' : ''}`}>
               {/* Placeholder for image/chart */}
-              <div className="w-64 h-40 bg-gray-800 rounded-lg flex items-center justify-center text-gray-500 text-lg">
+              <div className="w-full max-w-xs h-40 bg-gray-800 rounded-lg flex items-center justify-center text-gray-500 text-lg">
                 Screenshot
               </div>
             </div>
